@@ -1,0 +1,45 @@
+.gallery {
+    max-width: 90%;
+    max-height: 90%;
+    height: 100%;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#app2,h1 {
+    color: #521;
+}
+
+#grid {
+    gap: 20px;
+    display: grid;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+
+}
+
+.gallery:hover {
+    scale: 1.1;
+}
+
+#pop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+#img_pop {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    border: 5px solid #fff;
+    height: 50%;
+}

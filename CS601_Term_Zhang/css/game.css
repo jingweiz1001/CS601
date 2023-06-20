@@ -1,0 +1,47 @@
+#head {
+    color: #521;
+}
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .game-title {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .game-image {
+    max-width: 400px;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .game-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .game-release {
+    font-size: 16px;
+    color: #999;
+  }
+  
+  .game-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .game-link:hover {
+    background-color: #555;
+  }
+  

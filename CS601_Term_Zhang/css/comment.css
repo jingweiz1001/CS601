@@ -1,0 +1,48 @@
+#addComment {
+    text-align: center;
+}
+
+.input {
+    margin-left: 30%;
+    margin-right: 50%;
+    width: 40%;
+}
+
+.form_label {
+    margin-left: 0;
+    color: black;
+}
+
+.nameNcom {
+    padding: 1%;
+    background-color: gainsboro;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.comName {
+    margin-right: 80%;
+}
+.comment {
+    margin-right: 60%;
+}
+
+.delete {
+    margin-right:80%
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    background-color:lightgrey;
+    color: white;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}

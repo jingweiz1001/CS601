@@ -1,0 +1,111 @@
+@import url("hometown.css");
+@import url("project.css");
+@import url("comment.css");
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif  ;
+}
+
+header {
+    text-align: center;
+    background-color:#746f74;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    top: 0px;
+    left: 0px;
+    opacity: 99%;
+    box-shadow: 0px 0px 10px #746f74;
+}
+
+header:hover  {
+    background-color: black;
+}
+
+#logo {
+    margin-top: 8px;
+    width: 40px;
+}
+
+#logo-text {
+    position: fixed;
+    display: inline;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:oblique;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: darkgrey;
+}
+
+main {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+nav a{
+    padding-bottom: 10px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    color: darkgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+nav a:hover{
+    color: white;
+}
+
+
+p {
+    background-color:#eeeeee;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    background-color: #746f74;
+    margin: -8px;
+    width: 100%;
+    bottom: 12px;
+    opacity: 99%;
+    box-shadow: 0px 0px 10px #746f74;
+}
+
+#p-person {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style: none;
+    text-shadow: 2px 2px 5px blue;
+}
+
+
+@media (max-width: 380px) {
+    nav a{
+        display:grid;
+        text-align: center;
+        width: 100%;
+    }
+
+    main {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    #p-person {
+        width: 90%;
+    }
+
+}
+
+@media (max-width:760px) {
+    body {
+        margin-top: 130px;
+    }
+}

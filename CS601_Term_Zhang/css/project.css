@@ -1,0 +1,25 @@
+video {
+    width: 400px;
+}
+
+#logo-project {
+    width: 200px;
+}
+
+#p-pj1 {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 380px) {
+    video {
+        width: 90%;
+    }
+}
+
+@media (max-width: 550px) {
+    #p-pj1 {
+        width: 90%;
+    }
+}

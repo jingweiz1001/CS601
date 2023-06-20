@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dog</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dog.css">
+    <script src="./script/pet.js" defer></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>    
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/wanzi.JPG" alt="My lovely dog">
+        <h1 id="logo-text">JZ</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="hometown.html">Hometown</a>
+            <a href="project.html">Project</a>
+            <a href="pet.html">My Dog</a>
+            <a href="game.html">Games</a>
+            <a href="comment.html">Comment</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+    <main>
+        <div id="app2">
+            <h1>My Dog</h1>
+            <div id="grid">
+                <img class="gallery" @click="clickImg('./images/dog/1.JPG')" src="./images/dog/1.JPG" alt="">
+                <img class="gallery" @click="clickImg('./images/dog/2.JPG')" src="./images/dog/2.JPG" alt="">
+                <img class="gallery" @click="clickImg('./images/dog/3.JPG')" src="./images/dog/3.JPG" alt="">
+                <img class="gallery" @click="clickImg('./images/dog/4.JPG')" src="./images/dog/4.JPG" alt="">
+                <img class="gallery" @click="clickImg('./images/dog/5.JPG')" src="./images/dog/5.JPG" alt="">
+                <img class="gallery" @click="clickImg('./images/dog/6.JPG')" src="./images/dog/6.JPG" alt="">
+            </div>
+            <div v-show="checked" @click="closeImg" id="pop">
+                <img id="img_pop" src="" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>&copy;Author:Jingwei Zhang</footer>
+</body>
+</html>
