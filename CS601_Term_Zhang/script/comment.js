@@ -24,7 +24,7 @@ const app = Vue.createApp({
             fetch(url_read)
             .then(res => res.json())
             .then(data => this.projects = data)
-            .catch(err => this.handleError(err))
+            .catch(err => this.handleError(err));
         },
         handleError(err) {
             alert(err);
@@ -32,7 +32,9 @@ const app = Vue.createApp({
         doDelete(project) {
             this.projects.splice(this.projects.indexOf(project), 1);
             let data = this.projects.filter(p => p !== project);
-            console.log(data)
+            if (data.length == 0) {
+                data = [{name:'Hi everyone', comment:'Welcome to submit comment!'}];
+            }
                 fetch(url_write, {method:'PUT',
                     headers: {
                         'Content-Type':'application/json'
@@ -41,7 +43,7 @@ const app = Vue.createApp({
                 })
                 .then(res => res.json())
                 .then(data => console.log(data))
-                .catch(err => this.handleError(err))
+                .catch(err => this.handleError(err));
             
         },
         doPost() {
@@ -49,7 +51,6 @@ const app = Vue.createApp({
                 return false;
             }
             this.projects.push(this.project);
-            console.log(this.projects)
             fetch(url_write, {
                 method:"PUT",
                 body: JSON.stringify(this.projects),
@@ -59,7 +60,11 @@ const app = Vue.createApp({
             })
             .then(res => res.json())
             .then(data => console.log(data))
-            .catch(err => this.handleError(err))
+            .catch(err => this.handleError(err));
+            this.project.name = '';
+            this.project.comment = '';
+            alert('Submission complete!');
+            this.fetchData();
         },
         reset() {
             this.project.name = '';
